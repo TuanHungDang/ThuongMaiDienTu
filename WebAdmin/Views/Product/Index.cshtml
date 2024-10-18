@@ -1,0 +1,42 @@
+@model IEnumerable<Product>
+<a class="btn btn-primary" href="/product/Add">Add</a>
+<table class="table table-bordered">
+    <tr class="table-dark">
+        <th>ProductId</th>
+        <th>ProductName</th>
+        <th>ProductAlias</th>
+        <th>CategoryId</th>
+        <th>Unit</th>
+        <th>Price</th>
+        <th>Image</th>
+        <th>ProductDate</th>
+        <th>SaleOff</th>
+        <th>Viewed</th>
+        <th>Description</th>
+        <th>BrandId</th>
+        <th>Command</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ProductId</td>
+            <td>@item.ProductName</td>
+            <td>@item.ProductAlias</td>
+            <td>@item.CategoryId</td>
+            <td>@item.Unit</td>
+            <td>@item.Price</td>
+            <td>
+                <img class="img-fluid" src="@Url.Content("~/image/products/" + item.Image)" alt="@item.ProductName" style="max-width: 100px; max-height: 100px;" />
+            </td>
+            <td>@item.ProductDate</td>
+            <td>@item.SaleOff</td>
+            <td>@item.Viewed</td>
+            <td>@item.Description</td>
+            <td>@item.BrandId</td>
+            <td>
+                <a class="btn btn-outline-primary" href="/product/delete/@item.ProductId">Delete</a>
+                <a class="btn btn-outline-primary" href="/product/edit/@item.ProductId">Edit</a>
+            </td>
+        </tr>
+    }
+</table>

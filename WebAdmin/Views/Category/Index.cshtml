@@ -1,0 +1,25 @@
+@model IEnumerable<Category>
+    <a class="btn btn-primary" href="/Category/Add">Add</a>
+    <table class="table table-bordered">
+        <tr class="table-dark">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Alias</th>
+            <th>Description</th>
+            <th>Image</th>
+            <th>Command</th>
+        </tr>
+         @foreach(var item in Model){
+            <tr>
+                <td>@item.CategoryId</td>
+                <td>@item.CategoryName</td>
+                <td>@item.CategoryAlias</td>
+                <td>@item.Description</td>
+                <td>@item.ImageUrl</td>
+                <td>
+                    <a class="btn btn-outline-primary" href="/category/delete/@item.CategoryId">Delete</a>
+                    <a class="btn btn-outline-primary" href="/category/edit/@item.CategoryId">Edit</a>
+                </td>
+            </tr>
+        }
+    </table>

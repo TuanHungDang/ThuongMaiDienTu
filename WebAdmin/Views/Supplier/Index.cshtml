@@ -1,0 +1,31 @@
+@model IEnumerable<Supplier>
+    <a class="btn btn-primary" href="/supplier/Add">Add</a>
+    <table class="table table-bordered">
+        <tr class="table-dark">
+            <th>SupplierId</th>
+            <th>CompanyName</th>
+            <th>Logo</th>
+            <th>ContactName</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Description</th>
+            <th>Command</th>
+        </tr>
+         @foreach(var item in Model){
+            <tr>
+                <td>@item.SupplierId</td>
+                <td>@item.CompanyName</td>
+                <td>@item.Logo</td>
+                <td>@item.ContactName</td>
+                <td>@item.Email</td>
+                <td>@item.Phone</td>
+                <td>@item.Address</td>
+                <td>@item.Description</td>
+                <td>
+                    <a class="btn btn-outline-primary" href="/supplier/delete/@item.SupplierId">Delete</a>
+                    <a class="btn btn-outline-primary" href="/supplier/edit/@item.SupplierId">Edit</a>
+                </td>
+            </tr>
+        }
+    </table>

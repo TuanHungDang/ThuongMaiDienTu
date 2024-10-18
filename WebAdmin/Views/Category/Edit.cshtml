@@ -1,0 +1,31 @@
+@model Category
+<form method="post">
+    <div class="row">
+        <label class="col-2 form-label" asp-for="CategoryName">Name</label>
+        <div class="col-10">
+            <input class="form-control" type="text" asp-for="CategoryName">
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-2 form-label" asp-for="CategoryAlias">Alias</label>
+        <div class="col-10">
+            <input class="form-control" type="text" asp-for="CategoryAlias">
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-2 form-label" asp-for="Description">Description</label>
+        <div class="col-10">
+            <input class="form-control" type="text" asp-for="Description">
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-2 form-label" asp-for="ImageUrl">Image</label>
+        <div class="col-10">
+            <input class="form-control" type="text" asp-for="ImageUrl">
+        </div>
+    </div>
+    <div class="mt-2">
+        <button class="offset-2 btn btn-primary">Save Changes</button>
+        <a class="btn btn-outline-primary" href="/Category">Cancel</a>
+    </div>
+</form>

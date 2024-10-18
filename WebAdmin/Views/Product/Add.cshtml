@@ -1,0 +1,79 @@
+@model Product
+<form method="post" enctype="multipart/form-data">
+    <div class="row">
+        <label class="col-2 form-label" asp-for="ProductId">ProductId</label>
+        <div class="col-10">
+            <input class="form-control" type="text" asp-for="ProductId" />
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-2 form-label" asp-for="ProductName">ProductName</label>
+        <div class="col-10">
+            <input class="form-control" type="text" asp-for="ProductName" />
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-2 form-label" asp-for="ProductAlias">ProductAlias</label>
+        <div class="col-10">
+            <input class="form-control" type="text" asp-for="ProductAlias" />
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-2 form-label" asp-for="CategoryId">CategoryId</label>
+        <div class="col-10">
+            <input class="form-control" type="text" asp-for="CategoryId" />
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-2 form-label" asp-for="Unit">Unit</label>
+        <div class="col-10">
+            <input class="form-control" type="text" asp-for="Unit" />
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-2 form-label" asp-for="Price">Price</label>
+        <div class="col-10">
+            <input class="form-control" type="text" asp-for="Price" />
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-2 form-label" asp-for="Image">Image</label>
+        <div class="col-10">
+            <input class="form-control" type="file" name="imageFile" />
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-2 form-label" asp-for="ProductDate">ProductDate</label>
+        <div class="col-10">
+            <input class="form-control" type="text" asp-for="ProductDate" />
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-2 form-label" asp-for="SaleOff">SaleOff</label>
+        <div class="col-10">
+            <input class="form-control" type="text" asp-for="SaleOff" />
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-2 form-label" asp-for="Viewed">Viewed</label>
+        <div class="col-10">
+            <input class="form-control" type="text" asp-for="Viewed" />
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-2 form-label" asp-for="Description">Description</label>
+        <div class="col-10">
+            <textarea class="form-control" asp-for="Description"></textarea>
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-2 form-label" asp-for="BrandName">BrandName</label>
+        <div class="col-10">
+            <input class="form-control" type="text" asp-for="BrandName" />
+        </div>
+    </div>
+    <div class="mt-2">
+        <button class="offset-2 btn btn-primary">Save Changes</button>
+        <a class="btn btn-outline-primary" href="/Category">Cancel</a>
+    </div>
+</form>

@@ -1,0 +1,25 @@
+@model Brand
+<form method="post">
+    <div class="row">
+        <label class="col-2 form-label" asp-for="BrandName">Name</label>
+        <div class="col-10">
+            <input class="form-control" type="text" asp-for="BrandName">
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-2 form-label" asp-for="SupplierId">SupplierId</label>
+        <div class="col-10">
+            <input class="form-control" type="text" asp-for="SupplierId">
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-2 form-label" asp-for="Description">Description</label>
+        <div class="col-10">
+            <input class="form-control" type="text" asp-for="Description">
+        </div>
+    </div>
+    <div class="mt-2">
+        <button class="offset-2 btn btn-primary">Save Changes</button>
+        <a class="btn btn-outline-primary" href="/brand">Cancel</a>
+    </div>
+</form>
