@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dangt\\OneDrive\\Desktop\\project TMDT\\WebAdmin\\WebAdmin.csproj": {}
+    "C:\\Users\\dangt\\OneDrive\\ドキュメント\\GitHub\\ThuongMaiDienTu\\WebAdmin\\WebAdmin.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dangt\\OneDrive\\Desktop\\project TMDT\\WebAdmin\\WebAdmin.csproj": {
+    "C:\\Users\\dangt\\OneDrive\\ドキュメント\\GitHub\\ThuongMaiDienTu\\WebAdmin\\WebAdmin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dangt\\OneDrive\\Desktop\\project TMDT\\WebAdmin\\WebAdmin.csproj",
+        "projectUniqueName": "C:\\Users\\dangt\\OneDrive\\ドキュメント\\GitHub\\ThuongMaiDienTu\\WebAdmin\\WebAdmin.csproj",
         "projectName": "WebAdmin",
-        "projectPath": "C:\\Users\\dangt\\OneDrive\\Desktop\\project TMDT\\WebAdmin\\WebAdmin.csproj",
+        "projectPath": "C:\\Users\\dangt\\OneDrive\\ドキュメント\\GitHub\\ThuongMaiDienTu\\WebAdmin\\WebAdmin.csproj",
         "packagesPath": "C:\\Users\\dangt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dangt\\OneDrive\\Desktop\\project TMDT\\WebAdmin\\obj\\",
+        "outputPath": "C:\\Users\\dangt\\OneDrive\\ドキュメント\\GitHub\\ThuongMaiDienTu\\WebAdmin\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dangt\\AppData\\Roaming\\NuGet\\NuGet.Config"
