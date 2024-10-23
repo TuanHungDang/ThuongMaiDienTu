@@ -35,14 +35,15 @@ public class ProductRepository : BaseRepository
     (ProductName, ProductAlias, CategoryId, Unit, Price, Image, ProductDate, SaleOff, Viewed, Description, BrandId) 
     VALUES 
     (@ProductName, @ProductAlias, @CategoryId, @Unit, @Price, @Image, @ProductDate, @SaleOff, @Viewed, @Description, 
-    (SELECT TOP 1 BrandId FROM Brand WHERE BrandName = @BrandName))";
+    @BrandId)";
         return connection.Execute(sql, obj);
     }
 
     public int Edit(Product obj)
     {
         string sql = @"UPDATE Product SET
-     ProductName = @ProductName, ProductAlias = @ProductAlias, CategoryId = @CategoryId, Unit = @Unit, Price = @Price, Image = @Image, ProductDate = @ProductDate, SaleOff = @SaleOff, Viewed = @Viewed, Description = @Description, BrandId = (SELECT TOP 1 BrandId FROM Brand WHERE BrandName = @BrandName) WHERE ProductId = @ProductId";
+     ProductName = @ProductName, ProductAlias = @ProductAlias, CategoryId = @CategoryId, Unit = @Unit, Price = @Price, Image = @Image, ProductDate = @ProductDate, SaleOff = @SaleOff, Viewed = @Viewed, Description = @Description, BrandId = @BrandId  WHERE ProductId = @ProductId";
         return connection.Execute(sql, obj);
     }
+
 }

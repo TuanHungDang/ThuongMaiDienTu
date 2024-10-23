@@ -33,5 +33,4 @@ public class BrandRepository:BaseRepository{
         string sql = "UPDATE Brand SET BrandName = @BrandName, SupplierId = @SupplierId, Description = @Description WHERE BrandId = @BrandId";
         return connection.Execute(sql, obj);
     }
-
 }

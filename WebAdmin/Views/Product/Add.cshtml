@@ -1,12 +1,6 @@
 @model Product
 <form method="post" enctype="multipart/form-data">
     <div class="row">
-        <label class="col-2 form-label" asp-for="ProductId">ProductId</label>
-        <div class="col-10">
-            <input class="form-control" type="text" asp-for="ProductId" />
-        </div>
-    </div>
-    <div class="row">
         <label class="col-2 form-label" asp-for="ProductName">ProductName</label>
         <div class="col-10">
             <input class="form-control" type="text" asp-for="ProductName" />
@@ -19,9 +13,15 @@
         </div>
     </div>
     <div class="row">
-        <label class="col-2 form-label" asp-for="CategoryId">CategoryId</label>
+        <label class="col-2 form-label" asp-for="CategoryName">Category Name</label>
         <div class="col-10">
-            <input class="form-control" type="text" asp-for="CategoryId" />
+            <select class="form-control" asp-for="CategoryId">
+                <option value="">-- Select Category --</option>
+                @foreach (var item in ViewBag.Categories)
+                {
+                    <option value="@item.CategoryId">@item.CategoryName</option>
+                }
+            </select>
         </div>
     </div>
     <div class="row">
@@ -69,7 +69,13 @@
     <div class="row">
         <label class="col-2 form-label" asp-for="BrandName">BrandName</label>
         <div class="col-10">
-            <input class="form-control" type="text" asp-for="BrandName" />
+            <select class="form-control" asp-for="BrandId">
+                <option value="">-- Select Brand --</option>
+                @foreach (var brand in ViewBag.Brands)
+                {
+                    <option value="@brand.BrandId">@brand.BrandName</option>
+                }
+            </select>
         </div>
     </div>
     <div class="mt-2">

@@ -5,6 +5,26 @@
       "PackagePath": "staticwebassets\\webapp.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\project TMDT\\webapp\\wwwroot\\Image\\products\\1_2005.webp",
+      "PackagePath": "staticwebassets\\Image\\products\\1_2005.webp"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\project TMDT\\webapp\\wwwroot\\Image\\products\\1_359_1.webp",
+      "PackagePath": "staticwebassets\\Image\\products\\1_359_1.webp"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\project TMDT\\webapp\\wwwroot\\Image\\products\\frame_100_1_2__2_2.webp",
+      "PackagePath": "staticwebassets\\Image\\products\\frame_100_1_2__2_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\project TMDT\\webapp\\wwwroot\\Image\\products\\iphone_14.webp",
+      "PackagePath": "staticwebassets\\Image\\products\\iphone_14.webp"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\project TMDT\\webapp\\wwwroot\\Image\\products\\macbook-air-silver-select-201810.webp",
+      "PackagePath": "staticwebassets\\Image\\products\\macbook-air-silver-select-201810.webp"
+    },
+    {
       "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\project TMDT\\webapp\\wwwroot\\Image\\products\\redmi_note_11.png",
       "PackagePath": "staticwebassets\\Image\\products\\redmi_note_11.png"
     },
@@ -27,6 +47,26 @@
     {
       "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\project TMDT\\webapp\\wwwroot\\Image\\products\\redmi_note_13_pro.png",
       "PackagePath": "staticwebassets\\Image\\products\\redmi_note_13_pro.png"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\project TMDT\\webapp\\wwwroot\\Image\\products\\s23-ultra-xanh_2.webp",
+      "PackagePath": "staticwebassets\\Image\\products\\s23-ultra-xanh_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\project TMDT\\webapp\\wwwroot\\Image\\products\\samsung-galaxy-s23-128gb_3_.webp",
+      "PackagePath": "staticwebassets\\Image\\products\\samsung-galaxy-s23-128gb_3_.webp"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\project TMDT\\webapp\\wwwroot\\Image\\products\\sm-a546_galaxy_a54_5g_awesome_graphite_front_2.webp",
+      "PackagePath": "staticwebassets\\Image\\products\\sm-a546_galaxy_a54_5g_awesome_graphite_front_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\project TMDT\\webapp\\wwwroot\\Image\\products\\tab_s8_1_1_2_2.webp",
+      "PackagePath": "staticwebassets\\Image\\products\\tab_s8_1_1_2_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\project TMDT\\webapp\\wwwroot\\Image\\products\\v_ng_12.webp",
+      "PackagePath": "staticwebassets\\Image\\products\\v_ng_12.webp"
     },
     {
       "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\project TMDT\\webapp\\wwwroot\\css\\animate.css",
@@ -55,6 +95,10 @@
     {
       "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\project TMDT\\webapp\\wwwroot\\css\\responsive.css",
       "PackagePath": "staticwebassets\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\project TMDT\\webapp\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\dangt\\OneDrive\\Desktop\\project TMDT\\webapp\\wwwroot\\favicon.ico",

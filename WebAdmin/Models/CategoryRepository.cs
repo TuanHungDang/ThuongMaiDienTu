@@ -33,4 +33,5 @@ public class CategoryRepository:BaseRepository{
         return connection.Execute(sql, obj);
     }
 
+
 }

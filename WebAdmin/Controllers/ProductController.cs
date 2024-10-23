@@ -23,7 +23,8 @@ namespace WebAdmin.Controllers
 
         public IActionResult Add()
         {
-            ViewBag.Brands = Provider.Brand.GetBrands(); // Get list of brands for selection
+            ViewBag.Categories = Provider.Category.GetCategories();
+            ViewBag.Brands = Provider.Brand.GetBrands();
             return View();
         }
 
@@ -47,6 +48,7 @@ namespace WebAdmin.Controllers
 
         public IActionResult Edit(byte id)
         {
+            ViewBag.Categories = Provider.Category.GetCategories();
             ViewBag.Brands = Provider.Brand.GetBrands(); // For editing the brand
             return View(Provider.Product.GetProduct(id));
         }

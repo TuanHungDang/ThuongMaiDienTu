@@ -15,5 +15,6 @@ public class Product
     public string Description{get; set;} = null!;
     public short BrandId{get; set;}
     public string BrandName{get;set;} = null!;
+    public string CategoryName{get;set;} = null!;
 
 }

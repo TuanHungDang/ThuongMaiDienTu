@@ -37,3 +37,4 @@ C:\Users\dangt\OneDrive\Desktop\project TMDT\WebAdmin\obj\Debug\net8.0\refint\We
 C:\Users\dangt\OneDrive\Desktop\project TMDT\WebAdmin\obj\Debug\net8.0\WebAdmin.pdb
 C:\Users\dangt\OneDrive\Desktop\project TMDT\WebAdmin\obj\Debug\net8.0\WebAdmin.genruntimeconfig.cache
 C:\Users\dangt\OneDrive\Desktop\project TMDT\WebAdmin\obj\Debug\net8.0\ref\WebAdmin.dll
+C:\Users\dangt\OneDrive\Desktop\project TMDT\webadmin\obj\Debug\net8.0\WebAdmin.sourcelink.json
