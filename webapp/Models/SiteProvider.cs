@@ -12,4 +12,7 @@ public class SiteProvider : BaseProvider
     ProductRepository product;
     public ProductRepository Product => product ??= new(Connection);
 
+    CartRepository cart;
+    public CartRepository Cart => cart ??= new(Connection);
+
 }
