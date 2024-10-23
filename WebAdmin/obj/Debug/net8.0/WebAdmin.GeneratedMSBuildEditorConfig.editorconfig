@@ -9,87 +9,87 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebAdmin
 build_property.RootNamespace = WebAdmin
-build_property.ProjectDir = C:\Users\dangt\OneDrive\Desktop\project TMDT\WebAdmin\
+build_property.ProjectDir = C:\Users\dangt\OneDrive\ドキュメント\GitHub\ThuongMaiDienTu\WebAdmin\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\dangt\OneDrive\Desktop\project TMDT\WebAdmin
+build_property.MSBuildProjectDirectory = C:\Users\dangt\OneDrive\ドキュメント\GitHub\ThuongMaiDienTu\WebAdmin
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/dangt/OneDrive/Desktop/project TMDT/WebAdmin/Views/Brand/Add.cshtml]
+[C:/Users/dangt/OneDrive/ドキュメント/GitHub/ThuongMaiDienTu/WebAdmin/Views/Brand/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dangt/OneDrive/Desktop/project TMDT/WebAdmin/Views/Brand/Edit.cshtml]
+[C:/Users/dangt/OneDrive/ドキュメント/GitHub/ThuongMaiDienTu/WebAdmin/Views/Brand/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dangt/OneDrive/Desktop/project TMDT/WebAdmin/Views/Brand/Index.cshtml]
+[C:/Users/dangt/OneDrive/ドキュメント/GitHub/ThuongMaiDienTu/WebAdmin/Views/Brand/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dangt/OneDrive/Desktop/project TMDT/WebAdmin/Views/Category/Add.cshtml]
+[C:/Users/dangt/OneDrive/ドキュメント/GitHub/ThuongMaiDienTu/WebAdmin/Views/Category/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dangt/OneDrive/Desktop/project TMDT/WebAdmin/Views/Category/Edit.cshtml]
+[C:/Users/dangt/OneDrive/ドキュメント/GitHub/ThuongMaiDienTu/WebAdmin/Views/Category/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dangt/OneDrive/Desktop/project TMDT/WebAdmin/Views/Category/Index.cshtml]
+[C:/Users/dangt/OneDrive/ドキュメント/GitHub/ThuongMaiDienTu/WebAdmin/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dangt/OneDrive/Desktop/project TMDT/WebAdmin/Views/Home/Index.cshtml]
+[C:/Users/dangt/OneDrive/ドキュメント/GitHub/ThuongMaiDienTu/WebAdmin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dangt/OneDrive/Desktop/project TMDT/WebAdmin/Views/Home/Privacy.cshtml]
+[C:/Users/dangt/OneDrive/ドキュメント/GitHub/ThuongMaiDienTu/WebAdmin/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dangt/OneDrive/Desktop/project TMDT/WebAdmin/Views/Product/Add.cshtml]
+[C:/Users/dangt/OneDrive/ドキュメント/GitHub/ThuongMaiDienTu/WebAdmin/Views/Product/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dangt/OneDrive/Desktop/project TMDT/WebAdmin/Views/Product/Edit.cshtml]
+[C:/Users/dangt/OneDrive/ドキュメント/GitHub/ThuongMaiDienTu/WebAdmin/Views/Product/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dangt/OneDrive/Desktop/project TMDT/WebAdmin/Views/Product/Index.cshtml]
+[C:/Users/dangt/OneDrive/ドキュメント/GitHub/ThuongMaiDienTu/WebAdmin/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dangt/OneDrive/Desktop/project TMDT/WebAdmin/Views/Shared/Error.cshtml]
+[C:/Users/dangt/OneDrive/ドキュメント/GitHub/ThuongMaiDienTu/WebAdmin/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dangt/OneDrive/Desktop/project TMDT/WebAdmin/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/dangt/OneDrive/ドキュメント/GitHub/ThuongMaiDienTu/WebAdmin/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dangt/OneDrive/Desktop/project TMDT/WebAdmin/Views/Supplier/Add.cshtml]
+[C:/Users/dangt/OneDrive/ドキュメント/GitHub/ThuongMaiDienTu/WebAdmin/Views/Supplier/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dangt/OneDrive/Desktop/project TMDT/WebAdmin/Views/Supplier/Edit.cshtml]
+[C:/Users/dangt/OneDrive/ドキュメント/GitHub/ThuongMaiDienTu/WebAdmin/Views/Supplier/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dangt/OneDrive/Desktop/project TMDT/WebAdmin/Views/Supplier/Index.cshtml]
+[C:/Users/dangt/OneDrive/ドキュメント/GitHub/ThuongMaiDienTu/WebAdmin/Views/Supplier/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dangt/OneDrive/Desktop/project TMDT/WebAdmin/Views/_ViewImports.cshtml]
+[C:/Users/dangt/OneDrive/ドキュメント/GitHub/ThuongMaiDienTu/WebAdmin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dangt/OneDrive/Desktop/project TMDT/WebAdmin/Views/_ViewStart.cshtml]
+[C:/Users/dangt/OneDrive/ドキュメント/GitHub/ThuongMaiDienTu/WebAdmin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dangt/OneDrive/Desktop/project TMDT/WebAdmin/Views/Shared/_Layout.cshtml]
+[C:/Users/dangt/OneDrive/ドキュメント/GitHub/ThuongMaiDienTu/WebAdmin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-8ugpp6yojv
