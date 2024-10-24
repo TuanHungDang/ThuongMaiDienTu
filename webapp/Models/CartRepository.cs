@@ -1,15 +1,14 @@
 using System.Data;
 using Dapper;
 
-namespace WebApp.Models;
-
+namespace webapp.Models;
 public class CartRepository : BaseRepository
 {
     public CartRepository(IDbConnection cn): base(cn){
     }
 
     public int Edit(Cart obj){
-        string sql = "UPDATE Cart SET Quantity = @Quantity, UpdateDate = GETDATE() WHERE CartCode = @CartCode AND ProductId = @ProductId;";
+        string sql = "UPDATE Cart SET Quantity = @Quantity, UpdatedDate = GETDATE() WHERE CartCode = @CartCode AND ProductId = @ProductId;";
         return connection.Execute(sql, new{obj.CartCode, obj.ProductId, obj.Quantity});
     }
 

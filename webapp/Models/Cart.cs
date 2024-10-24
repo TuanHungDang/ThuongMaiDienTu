@@ -1,5 +1,4 @@
-namespace WebApp.Models;
-
+namespace webapp.Models;
 public class Cart{
     public string CartCode{get;set;} = null!;
     public int ProductId{get; set;}

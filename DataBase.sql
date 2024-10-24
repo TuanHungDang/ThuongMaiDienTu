@@ -272,3 +272,28 @@ GO
 SELECT * FROM Employees;
 
 SELECT * FROM Product
+
+--drop table Cart
+create table Cart(
+	CartCode char(32) not null,
+	ProductId int not null references Product(ProductId),
+	Quantity smallint not null,
+	CreatedDate datetime not null default getdate(),
+	UpdatedDate datetime not null default getdate(),
+	primary key (CartCode, ProductId)
+);
+go
+
+create proc AddCart(
+	@CartCode char(32),
+	@ProductId int,
+	@Quantity smallint
+)
+as
+	if exists(select * from Cart where CartCode = @CartCode and ProductId = @ProductId)
+		update Cart set Quantity += @Quantity, UpdatedDate = GETDATE() where CartCode = @CartCode and ProductId = @ProductId;
+	else
+		insert into Cart (CartCode, ProductId, Quantity) values (@CartCode, @ProductId, @Quantity);
+go
+
+SELECT * from Cart

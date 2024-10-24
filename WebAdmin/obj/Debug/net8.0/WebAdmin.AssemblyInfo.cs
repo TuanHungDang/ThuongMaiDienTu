@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebAdmin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b60769175aecc2ec1eb56fec35563e92ea1f2d43")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ee9dd856a8f3c6b1f7e242ba18977beba5d3a84")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebAdmin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebAdmin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

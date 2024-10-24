@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using WebApp.Models;
+using webapp.Models;
 
-namespace WebApp.Controllers;
+namespace webapp.Controllers;
 
 public class CartController : BaseController
 {

@@ -38,11 +38,11 @@
 			<span>
 				<span>$@ViewBag.Product.Price</span>
 				<label>Quantity:</label>
-				<input type="text" value="1" />
-				<button type="button" class="btn btn-fefault cart">
-					<i class="fa fa-shopping-cart"></i>
-					Add to cart
-				</button>
+				<form action="/cart/add" method="post">
+					<input type="hidden" name="productId" value="@ViewBag.Product.ProductId">
+					<input class="form-control" type="text" value="1" min="1" max="10" name="quantity">
+					<button class="btn btn-fefault cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+				</form>
 			</span>
 			<a href=""><img src="images/product-details/share.png" class="share img-responsive" alt="" /></a>
 		</div>
@@ -53,19 +53,19 @@
 </div><!--/product-details-->
 
 <div class="category-tab shop-details-tab"><!--category-tab-->
-						<div class="col-sm-12">
-							<ul class="nav nav-tabs">
-								<li class="active"><a href="#reviews" data-toggle="tab">Reviews</a></li>
-							</ul>
-						</div>
-						<div class="tab-content">							
-							<div class="tab-pane fade active in" id="reviews" >
-								<div class="col-sm-12">
-									<p>@ViewBag.Product.Description</p>
-								</div>
-							</div>
-							
-						</div>
+	<div class="col-sm-12">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#reviews" data-toggle="tab">Reviews</a></li>
+		</ul>
+	</div>
+	<div class="tab-content">
+		<div class="tab-pane fade active in" id="reviews">
+			<div class="col-sm-12">
+				<p>@ViewBag.Product.Description</p>
+			</div>
+		</div>
+
+	</div>
 </div><!--/category-tab-->
 
 <div class="recommended_items"><!--recommended_items-->

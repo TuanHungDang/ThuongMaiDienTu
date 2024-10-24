@@ -1,0 +1,71 @@
+@model IEnumerable<Cart>
+
+<section id="cart_items">
+    <div class="container">
+        <div class="breadcrumbs">
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li class="active">Shopping Cart</li>
+            </ol>
+        </div>
+        <div class="table-responsive cart_info">
+            <table class="table table-condensed">
+                <thead>
+                    <tr class="cart_menu">
+                        <td class="image">Item</td>
+                        <td class="description"></td>
+                        <td class="price">Price</td>
+                        <td class="quantity">Quantity</td>
+                        <td class="total">Total</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr v ="@item.ProductId" >
+                            <td>
+                                <a href=""><img width="80" src="image/products/@item.Image" alt=""></a>
+                            </td>
+                            <td>
+                                <h4><a href="">@item.ProductName</a></h4>
+                                <p>Web ID: @item.ProductId</p>
+                            </td>
+                            <td>
+                                <p>$@item.Price</p>
+                            </td>
+                            <td>
+                                <input class="qty" type="number" min="1" value="@item.Quantity">
+                            </td>
+                            <td>
+                                <p class="cart_total_price">$@(item.Price * item.Quantity)</p>
+                            </td>
+                            <td>
+                                <a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+                <tfoot>
+                    <th colspan="4">Total</th>
+                    <td>@Model.Sum(p => p.Price * p.Quantity)</td>
+                    <td></td>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</section> <!--/#cart_items-->
+
+@section Scripts {
+    <script>
+        $('.qty').change(function () {
+            let o = { 'quantity': $(this).val(), 'productId': $(this).closest('tr').attr('v') };
+            console.log(o);
+
+            $.post('/cart/edit', o, (d) => {
+                window.location.reload();
+            })
+        })
+    </script>
+}
