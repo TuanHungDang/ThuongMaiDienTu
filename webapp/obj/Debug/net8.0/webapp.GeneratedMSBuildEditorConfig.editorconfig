@@ -18,8 +18,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\dangt\OneDrive\Desktop\project TMDT\webapp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/dangt/OneDrive/Desktop/project TMDT/webapp/Views/Cart/index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxpbmRleC5jc2h0bWw=
+[C:/Users/dangt/OneDrive/Desktop/project TMDT/webapp/Views/Cart/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxDaGVja291dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dangt/OneDrive/Desktop/project TMDT/webapp/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/dangt/OneDrive/Desktop/project TMDT/webapp/Views/Home/Category.cshtml]

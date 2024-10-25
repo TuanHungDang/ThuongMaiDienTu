@@ -6,7 +6,6 @@ namespace webapp.Controllers;
 
 public class HomeController : BaseController
 {
-    private readonly ILogger<HomeController> _logger;
 
     public IActionResult Index()
     {

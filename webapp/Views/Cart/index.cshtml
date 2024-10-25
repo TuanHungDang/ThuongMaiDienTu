@@ -23,7 +23,7 @@
                 <tbody>
                     @foreach (var item in Model)
                     {
-                        <tr v ="@item.ProductId" >
+                        <tr v="@item.ProductId">
                             <td>
                                 <a href=""><img width="80" src="image/products/@item.Image" alt=""></a>
                             </td>
@@ -53,6 +53,9 @@
                     <td></td>
                 </tfoot>
             </table>
+            <div class="text-center">
+                <a href="/cart/checkout" class="btn btn-outline-primary">checkout</a>
+            </div>
         </div>
     </div>
 </section> <!--/#cart_items-->

@@ -297,3 +297,102 @@ as
 go
 
 SELECT * from Cart
+GO
+--DROP TABLE Invoice
+CREATE TABLE Invoice(
+InvoiceId BIGINT NOT NULL PRIMARY KEY,
+InvoiceDate DATETIME NOT NULL DEFAULT GETDATE(),
+Fullname NVARCHAR(64) NOT NULL,
+Email NVARCHAR(64) NOT NULL,
+Phone VARCHAR(16) NOT NULL,
+Address NVARCHAR(128) NOT NULL,
+);
+GO
+--DROP TABLE InvoiceDetail
+CREATE TABLE InvoiceDetail(
+	InvoiceId BIGINT NOT NULL,
+	ProductId INT NOT NULL,
+	Quantity SMALLINT NOT NULL,
+	Price DECIMAL(10, 2) NOT NULL
+);
+GO
+
+CREATE PROCEDURE AddInvoice(
+    @CartCode CHAR(32),
+    @InvoiceId BIGINT,
+    @InvoiceDate DATETIME,
+    @FullName NVARCHAR(64),
+    @Email VARCHAR(64),
+    @Phone VARCHAR(16),
+    @Address NVARCHAR(128)
+)
+AS
+BEGIN
+    -- Insert into the Invoice table
+    INSERT INTO Invoice (InvoiceId, InvoiceDate, FullName, Email, Phone, Address)
+    VALUES (@InvoiceId, @InvoiceDate, @FullName, @Email, @Phone, @Address);
+
+    -- Insert details into the InvoiceDetail table
+    INSERT INTO InvoiceDetail (InvoiceId, ProductId, Quantity, Price)
+    SELECT 
+        @InvoiceId, 
+        Cart.ProductId, 
+        Cart.Quantity, 
+        Product.Price
+    FROM 
+        Cart 
+    JOIN 
+        Product ON Cart.ProductId = Product.ProductId
+    WHERE 
+        CartCode = @CartCode;
+
+    -- Optional: Uncomment the line below to delete the cart after inserting the invoice
+    -- DELETE FROM Cart WHERE CartCode = @CartCode;
+END
+GO
+SELECT * from Invoice
+GO
+CREATE PROC GetAmountInvoice
+(
+	@InvoiceId BIGINT
+)
+AS 
+SELECT Price * Quantity FROM InvoiceDetail WHERE InvoiceId = @InvoiceId;
+
+DROP PROC GetAmountInvoice
+DROP TABLE VnPayment
+CREATE TABLE VnPayment(
+    Amount DECIMAL(10, 2) NOT NULL,
+    BankCode VARCHAR(8) NOT NULL,
+    BankTranNo VARCHAR(32) NOT NULL,
+    CardType VARCHAR(16) NOT NULL,
+    OrderInfo NVARCHAR(64) NOT NULL,
+    PayDate VARCHAR(16) NOT NULL,
+    ResponseCode VARCHAR(4) NOT NULL,
+    TmnCode VARCHAR(16) NOT NULL,
+    TransactionNo VARCHAR(16) NOT NULL,
+    TransactionStatus VARCHAR(4) NOT NULL,
+    TxnRef BIGINT NOT NULL,
+    SecureHash VARCHAR(MAX) NOT NULL
+);
+GO
+--DROP PROC AddVnPayment
+go
+CREATE PROC AddVnPayment(
+    @Amount DECIMAL(10, 2),
+    @BankCode VARCHAR(8),
+    @BankTranNo VARCHAR(32),
+    @CardType VARCHAR(16),
+    @OrderInfo NVARCHAR(64),
+    @PayDate VARCHAR(16),
+    @ResponseCode VARCHAR(4),
+    @TmnCode VARCHAR(16),
+    @TransactionNo VARCHAR(16),
+    @TransactionStatus VARCHAR(4),
+    @TxnRef BIGINT,
+    @SecureHash VARCHAR(MAX)
+)
+AS
+INSERT INTO VnPayment
+VALUES(@Amount, @BankCode, @BankTranNo, @CardType, @OrderInfo, @PayDate, @ResponseCode, @TmnCode, @TransactionNo, @TransactionStatus, @TxnRef, @SecureHash);
+GO

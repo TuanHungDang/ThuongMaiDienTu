@@ -3,16 +3,16 @@ public class SiteProvider : BaseProvider
 {
     public SiteProvider(IConfiguration conf) : base(conf){
     }
-    CategoryRepository category;
+    CategoryRepository? category;
     public CategoryRepository Category => category ??= new(Connection);
 
-    BrandRepository brand;
+    BrandRepository? brand;
     public BrandRepository Brand => brand ??= new(Connection);
 
-    ProductRepository product;
+    ProductRepository? product;
     public ProductRepository Product => product ??= new(Connection);
 
-    CartRepository cart;
+    CartRepository? cart;
     public CartRepository Cart => cart ??= new(Connection);
 
 }

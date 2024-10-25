@@ -6,6 +6,15 @@ namespace webapp.Controllers;
 public class CartController : BaseController
 {
     const string cart = "cart";
+    public IActionResult CheckOut()
+    {  
+        string? code = Request.Cookies[cart];
+        if (string.IsNullOrEmpty(code))
+        {
+            return Redirect("/");
+        }
+        return View(Provider.Cart.GetCarts(code));
+    }
     public IActionResult Index()
     {
         string? code = Request.Cookies[cart];
@@ -50,7 +59,7 @@ public class CartController : BaseController
         return Redirect("/cart/error");
     }
 
-    public IActionResult Delete( int id)
+    public IActionResult Delete(int id)
     {
         string? code = Request.Cookies[cart];
         if (string.IsNullOrEmpty(code))
@@ -58,7 +67,7 @@ public class CartController : BaseController
             code = Guid.NewGuid().ToString().Replace("-", "");
             Response.Cookies.Append(cart, code);
         }
-        int ret = Provider.Cart.Delete(code,id);
+        int ret = Provider.Cart.Delete(code, id);
         if (ret > 0)
         {
             return Redirect("/cart");
